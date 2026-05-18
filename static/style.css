@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+
+.header {
+    height: 80px;
+    background-color: #1a365d;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 2px solid #3182ce;
+}
+
+.title {
+    text-align: center;
+    line-height: 80px;
+}
+
+.author {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 15px;
+}
+
+.author a {
+    color: #90cdf4;
+    text-decoration: none;
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin-top: 5px;
+    height: calc(100vh - 85px);
+}
+
+.left-panel {
+    background-color: #2d3748;
+    color: white;
+    padding: 15px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.form-control {
+    background-color: #4a5568 !important;
+    border: 1px solid #718096 !important;
+    color: white !important;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.right-panel {
+    background-color: #edf2f7;
+    padding: 15px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.filter-block {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.my-select {
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e0;
+    background: white;
+    cursor: pointer;
+}
+
+.my-btn {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.my-btn-blue {
+    background: #3182ce;
+    color: white;
+}
+
+.my-btn-yellow {
+    background: #dd6b20;
+    color: white;
+}
+
+.messages-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.msg-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.msg-wrap.right {
+    justify-content: flex-end;
+}
+
+.msg-wrap.left {
+    justify-content: flex-start;
+}
+
+.msg {
+    background: white;
+    border-left: 5px solid #3182ce;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%;
+    position: relative;
+}
+
+.msg-delete {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #e53e3e;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.msg span {
+    color: #718096;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.main .row {
+    height: 100%;
+}
+
+.msg.new-style {
+    background: #3182ce;
+    color: white;
+    border-left: none;
+}
+
+.msg.new-style span {
+    color: #ebf8ff;
+}
+
+.msg.new-style .msg-delete {
+    color: #fed7d7;
+}

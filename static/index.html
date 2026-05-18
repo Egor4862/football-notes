@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Timoshenko 4244</title>
+
+  <link rel="stylesheet" href="static/lib/bootstrap.min.css">
+
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="static/f.png" class="logo">
+    <div class="title">Футбольные заметки</div>
+    <div class="author">Автор:
+        <a href="https://vk.com/id305021044" target="_blank">Егор Тимошенко</a>
+    </div>
+</header>
+
+<div class="container-fluid main">
+  <div class="row">
+
+    <div class="col-4 left-panel">
+
+        <div class="form-group">
+            <label>Заголовок</label>
+            <input type="text" id="title" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Тема</label>
+            <input type="text" id="topic" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Дата</label>
+            <input type="text" id="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Категория</label>
+            <select id="category" class="form-control">
+                </select>
+        </div>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="switch1">
+            <label class="custom-control-label" for="switch1">Стиль темы по умолчанию</label>
+        </div>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="switch2">
+            <label class="custom-control-label" for="switch2">Представить в виде HTML</label>
+        </div>
+
+        <div class="form-group">
+            <label>Сообщение</label>
+            <textarea id="message" class="form-control" rows="5"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="view" class="btn btn-info">Просмотр</button>
+            <button id="clearform" class="btn btn-danger">Очистить</button>
+            <button id="send" class="btn btn-success">Отправить</button>
+        </div>
+    </div>
+
+    <div class="col-8 right-panel">
+
+        <div class="filter-block">
+            <label class="filter-label"><b>Фильтр по категории:</b></label>
+
+            <select id="filtercat" class="filter-select my-select">
+                </select>
+
+            <button class="my-btn my-btn-blue" id="search">Поиск</button>
+            <button class="my-btn my-btn-yellow" id="clearfilter">Очистить всё</button>
+        </div>
+
+        <div class="messages-area">
+            </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="static/lib/jquery-1.12.4.min.js"></script>
+<script src="static/script.js"></script>
+</body>
+</html>
